@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@800&family=Signika+Negative:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #292929;
+  color: aliceblue;
+  font-family: "Neuton", serif;
+  font-family: "Signika Negative", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*NAV BAR*/
+
+header {
+  position: static;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: #464646;
+}
+
+header a {
+  align-self: center;
+}
+
+header nav {
+  align-self: center;
+  padding: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  border-style: outset;
+  background-color: #636363;
+  margin: 0 20px 0 20px;
+  padding: 5px 5px 5px 5px;
+  border-width: 2px;
+  border-radius: 7%;
+  border-color: rgb(167, 167, 167);
+}
+
+header nav ul li a {
+  padding: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Neuton", serif;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+/*FORM EN FAQ*/
+
+fieldset {
+  border-color: white;
+  border-style: dashed;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+fieldset div {
+  margin: auto;
+  margin-top: 10px;
+  padding: auto;
+}
+
+fieldset label {
+  text-align: center;
+  margin-top: 10px;
+}
+
+fieldset p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+fieldset select {
+  margin-top: 10px;
+}
+
+input {
+  margin: auto;
+  margin-top: 10px;
+  height: 33px;
+  width: 300px;
+}
+
+/*Lista en FAQ*/
+
+section div ol {
+  justify-content: center;
+  list-style: decimal-leading-zero;
+}
+
+section div ol li {
+  margin: 5px;
+  padding: 0;
+  max-width: max-content;
+  background-color: rgb(165, 165, 165);
+  margin: 10px 0 10px 0;
+}
+
+section div ul {
+  justify-content: center;
+  list-style: decimal;
+}
+
+section div ul li {
+  background-color: transparent;
+  max-width: max-content;
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+/*Clases*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat();
+}
+
+.listMargin {
+  margin: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgFaq {
+  margin-top: 20px;
+}
+
+.img {
+  border: #292929;
+  border-radius: 50%;
+  padding: 0;
+  margin: 15px 20px 15px 20px;
+}
+
+.p {
+  margin: 3%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.titles {
+  font-size: 2rem;
+  text-align: center;
+  align-self: auto;
+  margin: 15px 0px 0px 0px;
+  padding: 0;
+}
+
+.logo {
+  border-style: outset;
+  border-radius: 100%;
+  height: max-content;
+  overflow: hidden;
+  margin: 5px 15px 0px 15px;
+  border-color: #636363;
+}
