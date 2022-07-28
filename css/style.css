@@ -12,14 +12,11 @@ main {
   align-items: center;
 }
 
-/*NAV BAR*/
-
 header {
   position: static;
   margin-top: 5px;
   display: flex;
   justify-content: center;
-  background-color: #bbbbbb;
 }
 /*FORM EN FAQ*/
 
@@ -58,45 +55,11 @@ input {
   width: 300px;
 }
 
-/*Lista en FAQ*/
-
-section div ol {
-  justify-content: center;
-  list-style: decimal-leading-zero;
-}
-
-section div ol li {
-  margin: 5px;
-  padding: 0;
-  max-width: max-content;
-  background-color: rgb(165, 165, 165);
-  margin: 10px 0 10px 0;
-}
-
-section div ul {
-  justify-content: center;
-  list-style: decimal;
-}
-
-section div ul li {
-  background-color: transparent;
-  max-width: max-content;
-  padding: 0;
-  margin: 10px 0 10px 0;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 /*Clases*/
 
 .grid {
   display: grid;
-  background-color: #292929;
+  background-color: #bbbbbb;
   margin: 0;
   padding: 1rem;
   gap: 1.5rem;
@@ -106,7 +69,6 @@ footer {
   grid-template-areas:
     "nav nav"
     "main aside"
-    "main aside"
     "footer footer";
 }
 
@@ -114,11 +76,14 @@ footer {
   grid-area: aside;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer {
@@ -129,10 +94,28 @@ footer {
   grid-area: nav;
 }
 
-.img--border {
+.section__ubi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section__ubi--adjust {
+  width: 200px;
+  height: 200px;
+}
+
+.div__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img {
   height: max-content;
   width: max-content;
-  border: #616161;
+  border: #c9c9c9;
   border-style: solid;
   border-radius: 50%;
   padding: 0;
@@ -148,18 +131,15 @@ footer {
 }
 
 .logo {
-  border-style: outset;
   border-radius: 100%;
   height: max-content;
   overflow: hidden;
   margin: 5px 15px 0px 15px;
-  border-color: #636363;
 }
 
 /*Animations*/
 
 /*Media Query*/
-
 /*--Tablet--*/
 @media screen and (max-width: 768px) {
   .grid {
@@ -171,28 +151,22 @@ footer {
       "aside"
       "footer";
   }
-  header nav ul li {
-    margin: 0 5px 0 5px;
-  }
-  .img {
+
+  .div__img {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .card__img {
-    height: 100px;
-    align-self: center;
+  section iframe,
+  section img {
+    height: 200px;
+    width: 200px;
   }
 
-  .adjust--ubi {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .adjust--hist {
-    width: 525px;
-    height: 300px;
+  .aside {
+    align-items: center;
   }
 }
 
@@ -207,40 +181,14 @@ footer {
       "aside"
       "footer";
   }
-  header nav ul li {
-    text-align: center;
-    margin: 0 3px 0 3px;
-    padding: 0;
-  }
-  header nav ul li a {
-    font-size: 11px;
-  }
 
   .img {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  .img--border {
-    width: 90px;
-  }
-
-  section div iframe,
-  section div img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .iframeHistory {
-    height: 100px;
-    width: 150px;
-  }
-  .adjust--hist {
-    width: 325px;
-    height: 250px;
+    justify-content: space-around;
+    align-content: center;
+    height: 200px;
+    width: 200px;
   }
 }
